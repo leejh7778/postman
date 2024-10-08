@@ -52,7 +52,7 @@ app.post('/posts', async (req, res) => {
 });
 
 // 수정
-app.put('/posts/:id', async (req, res) => {
+app.patch('/posts/:id', async (req, res) => {
   const { id } = req.params;
   const { title, content } = req.body;
   try {
